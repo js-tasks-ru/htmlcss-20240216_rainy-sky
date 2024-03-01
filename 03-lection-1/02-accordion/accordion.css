@@ -1,0 +1,66 @@
+.page {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.page__caption {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page__accordion {
+  margin-top: 20px;
+}
+
+.accordion {
+  background-color: var(--white);
+  width: 579px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.accordion__item {
+  box-sizing: border-box;
+  padding: 24px 32px;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+}
+
+.accordion__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.accordion__summary {
+  font-family: Inter;
+  text-align: left;
+  color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion__summary::marker {
+  content: none;
+}
+
+.accordion__summary::after {
+  content: url('../../assets/icons/arrow.svg');
+  position: relative;
+}
+
+.accordion__item[open] > .accordion__summary::after {
+  transform: rotateZ(180deg);
+  top: -6px;
+}
+
+.accordion__details {
+  margin: 0;
+  margin-top: 16px;
+  font-family: Inter;
+  color: var(--grey-4);
+}
