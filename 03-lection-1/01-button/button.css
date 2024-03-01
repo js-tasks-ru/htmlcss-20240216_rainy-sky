@@ -1,0 +1,79 @@
+.page {
+  padding-top: 50px;
+}
+.page__caption {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  border-radius: 8px;
+  border: none;
+  padding: 15px 53px 14px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+  /* pointer-events: none; */
+}
+
+.button__primary {
+  background-color: #4263eb;
+  color: var(--white);
+}
+
+.button__primary:hover {
+  background-color: #2342c0;
+}
+
+.button__secondary {
+  background-color: #7048e8;
+  color: var(--white);
+}
+
+.button__secondary:hover {
+  background-color: #5028c6;
+}
+
+.button__alternate {
+  background-color: var(--white);
+  border: 1px solid var(--grey-3);
+  color: var(--grey-4);
+}
+
+.button__alternate:hover {
+  border-color: var(--black);
+}
+
+.button__alternate:disabled {
+  border-color: var(--grey-3);
+}
+
+.state-description {
+  color: var(--grey-3);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.table {
+  border-spacing: 32px 16px;
+}
