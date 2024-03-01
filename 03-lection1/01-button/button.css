@@ -1,1 +1,83 @@
-/* Стилизация кнопки */
+.page {
+  padding-top: 50px;
+}
+.page__caption {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  border-radius: 8px;
+  border: none;
+  padding: 15px 53px 14px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.button:disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+  /* pointer-events: none; */
+}
+
+.button_primary {
+  background-color: #4263eb; /* --blue из main.css отличается от цвета в фигме  */
+  color: var(--white);
+}
+
+.button_primary:hover:not([disabled]),
+.button_primary:active {
+  background-color: #2342c0;
+}
+
+.button_secondary {
+  background-color: #7048e8; /* то же самое с --purple  */
+  color: var(--white);
+}
+
+.button_secondary:hover:not([disabled]),
+.button_secondary:active {
+  background-color: #5028c6;
+}
+
+.button_alternate {
+  background-color: var(--white);
+  border: 1px solid var(--grey-3);
+  color: var(--grey-4);
+}
+
+.button_alternate:hover:not([disabled]),
+.button_alternate:active {
+  border-color: var(--black);
+}
+
+.button_alternate:disabled {
+  border-color: var(--grey-3);
+}
+
+.state-description {
+  color: var(--grey-3);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.table {
+  border-spacing: 32px 16px;
+}
