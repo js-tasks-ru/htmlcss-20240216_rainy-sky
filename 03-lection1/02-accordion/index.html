@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<!-- Страница с аккордеоном -->
-<html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./accordion.css" />
+  </head>
+  <body>
+    <div class="page">
+      <h1 class="page__caption">Accordion</h1>
+      <section class="accordion page__accordion">
+        <details class="accordion__item">
+          <summary class="accordion__summary">Accordion item 1</summary>
+          <p class="accordion__details">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
         </details>
-    </body>
+        <details class="accordion__item">
+          <summary class="accordion__summary">Accordion item 2</summary>
+          <p class="accordion__details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet est
+            nesciunt eum commodi sit voluptatibus non quod! Quia, vitae placeat.
+            Ipsam aut perspiciatis voluptatibus placeat minima aliquam iusto
+            commodi vel.
+          </p>
+        </details>
+        <details class="accordion__item">
+          <summary class="accordion__summary">Accordion item 3</summary>
+          <p class="accordion__details">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut modi
+            quis id ullam culpa dolores eius deleniti illum iste autem animi cum
+            unde laborum quos fugiat voluptate, ducimus quidem quasi.
+          </p>
+        </details>
+      </section>
+    </div>
+  </body>
 </html>
