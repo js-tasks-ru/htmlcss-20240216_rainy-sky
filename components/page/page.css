@@ -2,11 +2,9 @@
   background-color: var(--white);
   color: var(--black);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
   text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 
   --padding: 160px;
 }
@@ -31,15 +29,16 @@
 }
 
 .content {
-  flex-grow: 1;
   background-color: var(--grey-1);
   border-width: 1px 0;
   border-color: var(--grey-2);
   border-style: solid;
+  display: grid;
+  place-items: center;
 }
 
 .footer {
-  min-height: 384px;
+  /* min-height: 384px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
