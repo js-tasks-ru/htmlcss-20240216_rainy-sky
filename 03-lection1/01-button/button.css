@@ -32,23 +32,23 @@
 }
 
 .button_primary {
-  background-color: #4263eb; /* --blue из main.css отличается от цвета в фигме  */
+  background-color: var(--primary);
   color: var(--white);
 }
 
 .button_primary:hover:not([disabled]),
 .button_primary:active {
-  background-color: #2342c0;
+  background-color: var(--primary-darken);
 }
 
 .button_secondary {
-  background-color: #7048e8; /* то же самое с --purple  */
+  background-color: var(--secondary);
   color: var(--white);
 }
 
 .button_secondary:hover:not([disabled]),
 .button_secondary:active {
-  background-color: #5028c6;
+  background-color: var(--secondary-darken);
 }
 
 .button_alternate {
