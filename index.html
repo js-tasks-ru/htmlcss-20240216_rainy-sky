@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./components/footer/footer.css" />
     <link rel="stylesheet" href="./components/card/card.css" />
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css" />
+    <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css" />
     <script src="./04-lection2/01-histogram/script.js"></script>
   </head>
   <body>
@@ -32,18 +33,40 @@
             <div class="card__element">Card</div>
             <p class="card__title">Tooltip</p>
           </section>
+
+          <!-- Skeleton -->
           <section class="card">
-            <div class="card__element">Card</div>
-            <p class="card__title">Custom form elements</p>
+            <div class="card__element">
+              <div class="skeleton">
+                <div class="skeleton__top">
+                  <div class="skeleton__avatar"></div>
+                  <div class="skeleton__top-bars">
+                    <div
+                      class="skeleton__bar skeleton__bar_xs skeleton__bar_animation"
+                    ></div>
+                    <div
+                      class="skeleton__bar skeleton__bar_sm skeleton__bar_animation"
+                    ></div>
+                  </div>
+                </div>
+                <div class="skeleton__bar skeleton__bar_animation"></div>
+                <div class="skeleton__bar skeleton__bar_animation"></div>
+              </div>
+            </div>
+            <p class="card__title">Skeleton</p>
           </section>
+
           <section class="card">
             <div class="card__element">Card</div>
             <p class="card__title">Calendar</p>
           </section>
+
           <section class="card">
             <div class="card__element">Card</div>
             <p class="card__title">Modal dialog</p>
           </section>
+
+          <!-- Histogram -->
           <section class="card">
             <div class="card__element">
               <section class="histogram">
@@ -82,6 +105,7 @@
             </div>
             <p class="card__title">Histogram</p>
           </section>
+
           <section class="card">
             <div class="card__element">Card</div>
             <p class="card__title">Avatar</p>
