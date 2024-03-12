@@ -23,6 +23,7 @@
   --secondary-darken: var(--purple-2);
 
   --page-width: 1120px;
+  --radius: 8px;
 }
 
 * {
