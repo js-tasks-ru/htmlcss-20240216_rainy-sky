@@ -1,5 +1,9 @@
 .footer {
-  /* min-height: 384px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
   padding-top: 71px;
   box-sizing: border-box;
 }
@@ -21,8 +25,7 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
-  text-align: center;
   color: var(--black);
-  margin: 32px auto;
-  width: 640px;
+  margin: 32px 0;
+  max-width: 640px;
 }

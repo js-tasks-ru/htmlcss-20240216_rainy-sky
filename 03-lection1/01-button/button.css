@@ -1,5 +1,5 @@
 .button {
-  border-radius: 8px;
+  border-radius: var(--radius);
   border: none;
   padding: 15px 53px 14px;
   font-family: Roboto;

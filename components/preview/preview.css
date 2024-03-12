@@ -3,6 +3,14 @@
   border-width: 1px 0;
   border-color: var(--grey-2);
   border-style: solid;
-  display: grid;
-  place-items: center;
+  flex-grow: 1;
+  padding: 67px 0;
+  box-sizing: border-box;
+}
+
+.preview__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
