@@ -1,18 +1,55 @@
 <!DOCTYPE html>
-<!-- Страница с аккордеоном -->
-<html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./accordion.css" />
+    <style>
+      body {
+        width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="accordion">
+      <details class="accordion__item">
+        <summary class="accordion__summary">Accordion item 1</summary>
+        <p class="accordion__details">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </details>
+      <details class="accordion__item">
+        <summary class="accordion__summary">Accordion item 2</summary>
+        <p class="accordion__details">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet est
+          nesciunt eum commodi sit voluptatibus non quod! Quia, vitae placeat.
+          Ipsam aut perspiciatis voluptatibus placeat minima aliquam iusto
+          commodi vel.
+        </p>
+      </details>
+      <details class="accordion__item">
+        <summary class="accordion__summary">Accordion item 3</summary>
+        <p class="accordion__details">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut modi
+          quis id ullam culpa dolores eius deleniti illum iste autem animi cum
+          unde laborum quos fugiat voluptate, ducimus quidem quasi.
+        </p>
+      </details>
+    </section>
+  </body>
 </html>

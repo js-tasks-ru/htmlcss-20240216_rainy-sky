@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <!-- Главная страница -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="./assets/css/main.css">
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./components/page/page.css" />
+    <link rel="stylesheet" href="./components/container/container.css" />
+    <link rel="stylesheet" href="./components/header/header.css" />
+    <link rel="stylesheet" href="./components/preview/preview.css" />
+    <link rel="stylesheet" href="./components/footer/footer.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <h1 class="header__title">Reusable component library</h1>
+        </div>
+      </header>
+      <main class="preview page__preview">
+        <div class="container">
+          <h2 class="preview__title">Content</h2>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <h2 class="footer__title">About</h2>
+          <p class="footer__description">
+            This project is a collection of professionally designed, pre-built,
+            fully responsive HTML snippets you can drop into your projects. Get
+            started by checking out our free preview components, or browsing the
+            PNG previews in the categories you're most curious about.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
