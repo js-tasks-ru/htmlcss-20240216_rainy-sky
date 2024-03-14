@@ -1,0 +1,71 @@
+.skeleton {
+  --avatar-size: 64px;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 24px 40px 32px 24px;
+  min-width: 100%;
+  box-sizing: border-box;
+  gap: 8px;
+  display: flex;
+
+  & > * {
+    flex-shrink: 0;
+  }
+}
+
+.skeleton__bar_animation {
+  background: linear-gradient(
+    110deg,
+    var(--grey-2) 8%,
+    var(--grey-1) 18%,
+    var(--grey-2) 33%
+  );
+
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+}
+
+.skeleton__top {
+  gap: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.skeleton__avatar {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  background-color: var(--grey-2);
+}
+
+.skeleton__bar {
+  height: 20px;
+  background-color: var(--grey-2);
+}
+
+.skeleton__top-bars {
+  flex-basis: calc(100% - var(--avatar-size));
+  flex-direction: column;
+  gap: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skeleton__bar_xs {
+  width: 40%;
+}
+
+.skeleton__bar_sm {
+  width: 60%;
+}
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
