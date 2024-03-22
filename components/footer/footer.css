@@ -1,6 +1,5 @@
 /* TODO: remove .footer from the project */
-.page__footer,
-.footer {
+.page__footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
