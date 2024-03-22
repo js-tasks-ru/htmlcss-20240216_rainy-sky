@@ -1,35 +1,22 @@
 const run = () => {
   const $button = document.querySelector('#target');
   const $cross = document.querySelector('.modal__cross');
-  const $overlay = document.querySelector('.modal__overlay');
+  const $modal = document.querySelector('.modal');
 
   if (!$cross || !$button) return;
 
   $button.addEventListener('click', () => {
-    document.body.dataset.transition_open = true;
     document.body.style.overflow = 'hidden';
-
-    setTimeout(() => {
-      document.body.classList.add('modal-open');
-      delete document.body.dataset.transition_open;
-    });
+    $modal.style.display = 'grid';
   });
 
   const onClose = () => {
-    document.body.dataset.transition_close = true;
-
-    const cb = () => {
-      delete document.body.dataset.transition_close;
-      document.body.style.overflow = '';
-      document.body.classList.remove('modal-open');
-      $overlay.removeEventListener('transitionend', cb);
-    };
-
-    $overlay.addEventListener('transitionend', cb);
+    document.body.style.overflow = '';
+    $modal.style.display = 'none';
   };
 
   $cross.addEventListener('click', onClose);
-  $overlay.addEventListener('click', onClose);
+  $modal.addEventListener('click', onClose);
 };
 
 document.addEventListener('DOMContentLoaded', run);
