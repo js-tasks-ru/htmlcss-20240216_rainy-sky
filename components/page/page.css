@@ -2,8 +2,9 @@
   background-color: var(--white);
   color: var(--black);
   min-height: 100vh;
-  /* display: grid;
-  grid-template-rows: auto 1fr auto; */
+}
+
+.page_flex {
   display: flex;
   flex-direction: column;
 }
