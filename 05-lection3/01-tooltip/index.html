@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <!-- Страница с тултипом -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./tooltip.css">
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./tooltip.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tooltip">
+      <div class="tooltip__trigger">
+        <img
+          src="../../assets/icons/help.svg"
+          alt="help"
+          width="24"
+          height="24"
+        />
+      </div>
+      <div class="tooltip__bubble">
+        <p class="tooltip__text">Helper Text</p>
+      </div>
+    </div>
+    <script>
+      const $tooltipBubble = document.querySelector('.tooltip__bubble');
+      $tooltipBubble.addEventListener('click', () => {
+        alert('Helper Text');
+      });
+    </script>
+  </body>
 </html>
