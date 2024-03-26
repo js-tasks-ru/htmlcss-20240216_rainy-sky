@@ -8,11 +8,14 @@
   --purple-2: #5028c6;
   --blue-1: #4263eb;
   --blue-2: #2342c0;
+  --blue-3: #334d6e;
+  --blue-4: #a0b1f5;
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
   --grey-3: #acb5bd;
   --grey-4: #495057;
+  --grey-5: #90a0b7;
 
   --error: var(--red);
   --success: var(--blue-1);
