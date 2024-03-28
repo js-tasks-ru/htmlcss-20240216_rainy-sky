@@ -3,12 +3,3 @@
   color: var(--black);
   min-height: 100vh;
 }
-
-.page_flex {
-  display: flex;
-  flex-direction: column;
-}
-
-.page__preview {
-  flex-grow: 1;
-}
