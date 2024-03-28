@@ -16,6 +16,7 @@
 
   --error: var(--red);
   --success: var(--blue-1);
+  --active: var(--red);
 
   --primary: var(--blue-1);
   --primary-darken: var(--blue-2);

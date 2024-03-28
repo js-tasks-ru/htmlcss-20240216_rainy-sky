@@ -49,9 +49,13 @@
   align-items: flex-end;
   height: 50px;
   gap: 1px;
+  overflow: hidden;
 }
 
 .histogram__column {
   background-color: var(--blue-1);
   flex-basis: 9px;
+  height: 50px;
+  transform: translateY(100%);
+  transition: transform 0.25s ease-in-out;
 }
