@@ -19,6 +19,17 @@
   margin: 0;
 }
 
+.footer__title-2 {
+  color: var(--grey-3);
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
 .footer__description {
   font-family: Inter;
   font-size: 16px;
