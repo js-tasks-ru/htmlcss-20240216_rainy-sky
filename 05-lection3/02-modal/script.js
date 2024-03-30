@@ -6,13 +6,19 @@ const run = () => {
   if (!$cross || !$button) return;
 
   $button.addEventListener('click', () => {
-    document.body.style.overflow = 'hidden';
-    $modal.style.display = 'grid';
+    window.location.hash = 'modal';
   });
 
   const onClose = () => {
-    document.body.style.overflow = '';
-    $modal.style.display = 'none';
+    $modal.style.opacity = 0;
+
+    const cb = () => {
+      $modal.style.opacity = '';
+      window.location.hash = '';
+      $modal.removeEventListener('transitionend', cb);
+    };
+
+    $modal.addEventListener('transitionend', cb);
   };
 
   $cross.addEventListener('click', onClose);
