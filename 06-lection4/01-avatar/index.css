@@ -1,6 +1,11 @@
 .avatar {
   --avatar-size: 102px;
-  border-radius: 50%;
+
   width: var(--avatar-size);
   height: var(--avatar-size);
+}
+
+.avatar__img {
+  border-radius: 50%;
+  width: 100%;
 }
