@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<!-- Страница с аватаром -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./avatar.css">
-    </head>
-    <body>
-
-    </body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../components/page/page.css" />
+    <link rel="stylesheet" href="../../components/header/header.css" />
+    <link rel="stylesheet" href="../../components/sidebar/sidebar.css" />
+    <link rel="stylesheet" href="../../components/navigation/navigation.css" />
+    <link rel="stylesheet" href="../../components/footer/footer.css" />
+    <link rel="stylesheet" href="../../components/content/content.css" />
+    <link rel="stylesheet" href="../../pages/template.css" />
+    <link rel="stylesheet" href="./avatar.css" />
+  </head>
+  <body>
+    <div class="page page-details">
+      <header class="header page__header"></header>
+      <aside class="sidebar page__sidebar">
+        <h4 class="sidebar__title">Components</h4>
+        <ul class="navigation">
+          <li class="navigation__item">Modal</li>
+          <li class="navigation__item">Tooltip</li>
+          <li class="navigation__item navigation__item_active">Avatar</li>
+          <li class="navigation__item">Calendar</li>
+          <li class="navigation__item">Histogram</li>
+          <li class="navigation__item">Custom form elements</li>
+          <li class="navigation__item navigation__item_empty"></li>
+          <li class="navigation__item">Main page</li>
+        </ul>
+      </aside>
+      <main class="page__content">
+        <h3 class="content__title">Avatar</h3>
+        <img src="./public/avatar-200.jpg" class="avatar" alt="avatar" />
+      </main>
+      <footer class="footer page__footer">
+        <h3 class="footer__title-2">Reusable component library</h3>
+      </footer>
+    </div>
+  </body>
 </html>
